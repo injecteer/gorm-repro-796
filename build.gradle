@@ -1,0 +1,17 @@
+plugins {
+  id 'groovy'
+  id 'eclipse'
+}
+
+repositories{
+  mavenCentral()
+  jcenter()
+}
+
+dependencies {
+  testImplementation 'org.codehaus.groovy:groovy:3.0.19'
+  testImplementation 'org.grails:grails-datastore-gorm-hibernate5:8.0.1'
+  testImplementation 'com.h2database:h2:1.4.200'
+  testImplementation 'org.spockframework:spock-core:2.3-groovy-3.0'
+  testImplementation 'org.junit.jupiter:junit-jupiter:5.10.1'
+}
